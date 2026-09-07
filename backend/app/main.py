@@ -38,7 +38,7 @@ def root():
         "app": settings.PROJECT_NAME,
         "status": "online",
         "docs": "/docs",
-        "phase": "Project Phase 3 - Hosted LLM ChatGPT Platform"
+        "phase": "Genie AI Platform"
     }
 
 

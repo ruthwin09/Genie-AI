@@ -3,14 +3,14 @@ import os
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "ChatGPT AI Platform"
+    PROJECT_NAME: str = "Genie AI"
     API_V1_STR: str = "/api"
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "chatgpt_phase3_super_secret_jwt_key_change_in_production_2026")
+    SECRET_KEY: str = os.getenv("SECRET_KEY", "genie_ai_super_secret_jwt_key_change_in_production_2026")
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 30  # 30 days
     
     # Database
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./chatgpt_platform.db")
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./genie_ai.db")
     
     # Hosted LLM APIs
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
